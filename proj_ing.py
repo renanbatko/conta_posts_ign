@@ -1,9 +1,6 @@
 #/usr/bin/env python
 # -*- coding: utf-8 -*-
 import urllib
-import time
-import re
-import os
 
 #funcao para descobrir o numero de paginas do topico
 def num_pages(page):
@@ -28,7 +25,6 @@ def add_post(line, dic_users):
 
 #inicio
 url_base = raw_input("URL do tópico: ")
-titulo = raw_input("Título do tópico: ")
 
 #pega o numero de paginas
 page = urllib.urlopen(url_base)
